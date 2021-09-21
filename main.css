@@ -64,6 +64,7 @@ body {
 
 .title-container {
     position: relative;
+    transform: translateY(-40px);
 }
 
 .title {
