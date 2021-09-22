@@ -5,7 +5,8 @@ window.addEventListener('DOMContentLoaded', function() {
     app.curtain = document.querySelector('.curtain');
     app.title = document.querySelector('.title');
     app.tagline = document.querySelector('.tagline');
-    app.btnContainer = document.querySelector('.inner');    
+    app.btnContainer = document.querySelector('.inner');
+    
 });
 
 window.addEventListener('load', function() {
