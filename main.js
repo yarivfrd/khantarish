@@ -2,7 +2,6 @@
 const app = {};
 
 window.addEventListener('DOMContentLoaded', function() {
-    console.log('DOMContentLoaded event');
     app.curtain = document.querySelector('.curtain');
     app.title = document.querySelector('.title');
     app.tagline = document.querySelector('.tagline');
