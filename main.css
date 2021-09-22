@@ -30,6 +30,7 @@ html {
 }
 
 body {
+    direction: rtl;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,6 +165,41 @@ body {
     animation-delay: .4s;
 }
 
+.about-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(10px);
+    transition: all ease .3s;
+}
+
+.about-modal.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.about-modal .content {
+    font-family: "Karantina Regular";
+    color: var(--dark-gray);
+    text-shadow: 1px 1px 0 var(--light-seaweed);
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.about-modal #aboutCloseBtn {
+    height: 3.5rem;
+    border: none;
+    background-color: var(--dark-gray);
+    border-radius: 50%;
+    padding: .5rem;
+    box-shadow: 1px 1px 0 var(--light-seaweed);
+}
+
 @media (max-height: 620px) {
     .title {
         font-size: 8rem;
@@ -171,6 +207,10 @@ body {
 
     .tagline {
         font-size: 2.7rem;
+    }
+
+    .about-modal .content {
+        font-size: 2.5rem;
     }
 }
 

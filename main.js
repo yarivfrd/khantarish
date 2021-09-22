@@ -6,7 +6,10 @@ window.addEventListener('DOMContentLoaded', function() {
     app.title = document.querySelector('.title');
     app.tagline = document.querySelector('.tagline');
     app.btnContainer = document.querySelector('.inner');
-    
+
+    app.aboutOpenBtn = document.querySelector('#about');
+    app.aboutCloseBtn = document.querySelector('#aboutCloseBtn');
+    app.aboutModal = document.querySelector('.about-modal');
 });
 
 window.addEventListener('load', function() {
@@ -20,5 +23,13 @@ window.addEventListener('load', function() {
 
     app.tagline.addEventListener('transitionend', function(e) {
         app.btnContainer.classList.add('visible');
+    });
+
+    app.aboutOpenBtn.addEventListener('click', function() {
+        app.aboutModal.classList.remove('hidden');
+    });
+
+    app.aboutCloseBtn.addEventListener('click', function() {
+        app.aboutModal.classList.add('hidden');
     });
 });
