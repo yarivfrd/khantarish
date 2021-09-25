@@ -248,7 +248,16 @@ body {
 
 @media (hover: hover) {
     .qr-curtain {
-        display: block;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        inset: 0;
+        background-color: var(--light-seaweed);
+    }
+
+    .qr-curtain img {
+        max-width: 300px;
     }
 }
 
