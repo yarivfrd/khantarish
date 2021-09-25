@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="he">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#7adfbb"/>
+    <meta name="theme-color" content="#7adfbb" />
     <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
     <link rel="stylesheet" href="main.css">
-    <title>החנטריש</title>
+    <title>⚡ החנטריש ⚡</title>
 </head>
+
 <body>
     <div class="container">
-            <div class="title-container">
-                <div class="title">החנטריש</div>
-                <div class="tagline">כבר לא משעמם בחריש</div>
-            </div>
-                <div class="inner">
-                    <a id="about">מי אנחנו</a>
-                    <a target="_blank" href="https://www.facebook.com/hashtag/%D7%94%D7%97%D7%A0%D7%98%D7%A8%D7%99%D7%A9_%D7%91%D7%97%D7%A8%D7%99%D7%A9">מה אנחנו עושים</a>
-                    <a id="join">הצטרפות</a>
-                    <!-- <a id="join" class="cta" href="https://t.me/yarivfrd">הצטרפות</a> -->
-                </div>
+        <div class="title-container">
+            <div class="title">החנטריש</div>
+            <div class="tagline">כבר לא משעמם בחריש</div>
         </div>
+        <div class="inner">
+            <a class="primary-btn" id="about">מי אנחנו</a>
+            <a class="primary-btn" target="_blank"
+                href="https://www.facebook.com/hashtag/%D7%94%D7%97%D7%A0%D7%98%D7%A8%D7%99%D7%A9_%D7%91%D7%97%D7%A8%D7%99%D7%A9">מה
+                אנחנו עושים</a>
+            <a class="primary-btn" id="join">הצטרפות</a>
+        </div>
+    </div>
 
-        <div class="modal about hidden">
-            <div class="content">
-                קבוצת טלגרם לארגון אירועים ופעילויות משותפות כדי שיהיה בעיר קצת פחות משעמם. מדובר ביוזמה אישית שלא קשורה לעירייה או גוף חיצוני אחר. מימון הפעילויות והמפגשים הוא מכיסם המשותף של חברי הקבוצה.
-            </div>
-            <img class="close-btn" id="aboutCloseBtn" src="icons/close.svg" alt="Close about modal">
+    <div class="modal about hidden">
+        <div class="content">
+            קבוצת טלגרם לארגון אירועים ופעילויות משותפות כדי שיהיה בעיר קצת פחות משעמם. מדובר ביוזמה אישית שלא קשורה
+            לעירייה או גוף חיצוני אחר. מימון הפעילויות והמפגשים הוא מכיסם המשותף של חברי הקבוצה.
         </div>
-        
-        <div class="modal join hidden">
-            <div class="content">
-                הצטרפות הצטרפות
-            </div>
-            <img class="close-btn" id="joinCloseBtn" src="icons/close.svg" alt="Close join modal">
-        </div>
+        <img class="close-btn" id="aboutCloseBtn" src="icons/close.svg" alt="Close about modal">
+    </div>
 
-        <div class="curtain"></div>
-        <script src="./main.js"></script>
+    <div class="modal join hidden">
+        <div class="content">
+            הקבוצה מתנהלת באפליקציית טלגרם ומיועדת לגילאי 25-35 בלבד.
+מיד תועברו לצ׳אט עם מנהל הקבוצה, שם עליכן לכתוב את גילכן ושאתן מעוניינות להצטרף. סבבה?  🙂
+            <a class="primary-btn" href="https://t.me/yarivfrd">סבבה</a>
+            <a class="primary-btn inverted not-cool">לא סבבה</a>
+        </div>
+    </div>
+
+    <div class="curtain"></div>
+    <script src="./main.js"></script>
 </body>
+
 </html>

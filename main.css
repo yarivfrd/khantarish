@@ -111,7 +111,19 @@ body {
     height: 100%;
 }
 
-.container a {
+#join {
+    color: inherit;
+    background-color: white;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(10px, 10px);
+}
+
+.primary-btn {
     font-family: "Karantina Light";
     font-size: 3rem;
     letter-spacing: 1px;
@@ -121,46 +133,30 @@ body {
     margin-bottom: 1rem;
     padding: 10px 33px 14px;
     text-decoration: none;
-}
-
-.container a#join {
-    color: inherit;
-    background-color: white;
-}
-
-.container a:last-child {
-    margin-bottom: 0;
-}
-
-
-.inner {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    transform: translate(10px, 10px);
-}
-
-.inner a {
     opacity: 0;
     transition: ease .01s;
 }
 
-.inner.visible a {
+.primary-btn:last-child {
+    margin-bottom: 0;
+}
+
+.inner.visible .primary-btn {
     opacity: 1;
     animation: grow ease .3s 1 forwards;
 }
 
-.inner.visible a:nth-child(1) {
+.inner.visible .primary-btn:nth-child(1) {
     transition-delay: .2s;
     animation-delay: .2s;
 }
 
-.inner.visible a:nth-child(2) {
+.inner.visible .primary-btn:nth-child(2) {
     transition-delay: .3s;
     animation-delay: .3s;
 }
 
-.inner.visible a:nth-child(3) {
+.inner.visible .primary-btn:nth-child(3) {
     transition-delay: .4s;
     animation-delay: .4s;
 }
@@ -189,6 +185,23 @@ body {
     text-align: center;
     padding: 1rem;
     font-size: 3rem;
+}
+
+.modal .primary-btn {
+    display: inline-block;
+    width: 229px;
+    background-color: #fff;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.modal .primary-btn:first-child {
+    margin-top: 2rem;
+}
+
+.modal .primary-btn.inverted {
+    background-color: var(--dark-gray);
+    color: white;
 }
 
 .modal .close-btn {

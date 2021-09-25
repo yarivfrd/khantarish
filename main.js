@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     app.joinOpenBtn = document.querySelector('#join');
     app.joinModal = document.querySelector('.modal.join');
-    app.joinCloseBtn = document.querySelector('#joinCloseBtn');
+    app.joinNotCoolBtn = document.querySelector('.not-cool');
 });
 
 window.addEventListener('load', function() {
@@ -41,7 +41,7 @@ window.addEventListener('load', function() {
         app.joinModal.classList.remove('hidden');
     });
 
-    app.joinCloseBtn.addEventListener('click', function() {
+    app.joinNotCoolBtn.addEventListener('click', function() {
         app.joinModal.classList.add('hidden');
     });
 });
