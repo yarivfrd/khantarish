@@ -195,7 +195,7 @@ body {
     opacity: 1;
 }
 
-.modal .primary-btn:first-child {
+.modal .primary-btn:first-of-type {
     margin-top: 2rem;
 }
 
@@ -210,6 +210,15 @@ body {
     background-color: var(--dark-gray);
     border-radius: 50%;
     padding: .5rem;
+}
+
+.highlight {
+    display: inline-block;
+    text-shadow: none;
+    color: var(--dark-gray);
+    background-color: white;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 
 @media (max-height: 620px) {
