@@ -18,14 +18,25 @@
                 <div class="inner">
                     <a id="about">מי אנחנו</a>
                     <a target="_blank" href="https://www.facebook.com/hashtag/%D7%94%D7%97%D7%A0%D7%98%D7%A8%D7%99%D7%A9_%D7%91%D7%97%D7%A8%D7%99%D7%A9">מה אנחנו עושים</a>
-                    <a id="join" class="cta" href="https://t.me/yarivfrd">הצטרפות</a>
+                    <a id="join">הצטרפות</a>
+                    <!-- <a id="join" class="cta" href="https://t.me/yarivfrd">הצטרפות</a> -->
                 </div>
         </div>
-        <div class="about-modal hidden">
+
+        <div class="modal about hidden">
             <div class="content">
                 קבוצת טלגרם לארגון אירועים ופעילויות משותפות כדי שיהיה בעיר קצת פחות משעמם. מדובר ביוזמה אישית שלא קשורה לעירייה או גוף חיצוני אחר. מימון הפעילויות והמפגשים הוא מכיסם המשותף של חברי הקבוצה.
             </div>
-            <img id="aboutCloseBtn" src="icons/close.svg" alt="Close modal">
+            <img class="close-btn" id="aboutCloseBtn" src="icons/close.svg" alt="Close about modal">
+        </div>
+        
+        <div class="modal join hidden">
+            <div class="content">
+                הצטרפות הצטרפות
+            </div>
+            <img class="close-btn" id="joinCloseBtn" src="icons/close.svg" alt="Close join modal">
+        </div>
+
         <div class="curtain"></div>
         <script src="./main.js"></script>
 </body>

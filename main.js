@@ -8,8 +8,12 @@ window.addEventListener('DOMContentLoaded', function() {
     app.btnContainer = document.querySelector('.inner');
 
     app.aboutOpenBtn = document.querySelector('#about');
+    app.aboutModal = document.querySelector('.modal.about');
     app.aboutCloseBtn = document.querySelector('#aboutCloseBtn');
-    app.aboutModal = document.querySelector('.about-modal');
+
+    app.joinOpenBtn = document.querySelector('#join');
+    app.joinModal = document.querySelector('.modal.join');
+    app.joinCloseBtn = document.querySelector('#joinCloseBtn');
 });
 
 window.addEventListener('load', function() {
@@ -31,5 +35,13 @@ window.addEventListener('load', function() {
 
     app.aboutCloseBtn.addEventListener('click', function() {
         app.aboutModal.classList.add('hidden');
+    });
+    
+    app.joinOpenBtn.addEventListener('click', function() {
+        app.joinModal.classList.remove('hidden');
+    });
+
+    app.joinCloseBtn.addEventListener('click', function() {
+        app.joinModal.classList.add('hidden');
     });
 });

@@ -123,7 +123,7 @@ body {
     text-decoration: none;
 }
 
-.container a.cta {
+.container a#join {
     color: inherit;
     background-color: white;
 }
@@ -165,7 +165,7 @@ body {
     animation-delay: .4s;
 }
 
-.about-modal {
+.modal {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -176,12 +176,12 @@ body {
     transition: all ease .3s;
 }
 
-.about-modal.hidden {
+.modal.hidden {
     opacity: 0;
     visibility: hidden;
 }
 
-.about-modal .content {
+.modal .content {
     font-family: "Karantina Regular";
     color: white;
     text-shadow: 1px 1px 0 var(--dark-gray);
@@ -191,7 +191,7 @@ body {
     font-size: 3rem;
 }
 
-.about-modal #aboutCloseBtn {
+.modal .close-btn {
     height: 3.5rem;
     border: none;
     background-color: var(--dark-gray);
@@ -208,7 +208,7 @@ body {
         font-size: 2.7rem;
     }
 
-    .about-modal .content {
+    .modal .content {
         font-size: 2.5rem;
     }
 }
