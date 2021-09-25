@@ -18,7 +18,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('load', function () {
     
-
     app.curtain.classList.add('hidden');
 
     app.curtain.addEventListener('transitionend', function (e) {
