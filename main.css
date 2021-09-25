@@ -75,12 +75,12 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 10px;
-    transform: translateX(100vw);
-    transition: transform ease-out .5s;
+    transform: translateY(-100vh);
+    transition: transform ease-out .7s;
 }
 
 .title.visible {
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 .tagline {
@@ -93,7 +93,7 @@ body {
     padding-left: 16px;
     padding-right: 16px;
     transform: translateY(0) translateX(-50%);
-    transition: ease .7s .5s;
+    transition: ease .5s .7s;
     opacity: 0;
     z-index: -1;
 }
@@ -161,6 +161,7 @@ body {
     animation-delay: .4s;
 }
 
+
 .modal {
     display: flex;
     flex-direction: column;
@@ -170,6 +171,12 @@ body {
     inset: 0;
     backdrop-filter: blur(10px);
     transition: all ease .3s;
+}
+
+@supports not (backdrop-filter: blur(10px)) {
+    .modal {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 }
 
 .modal.hidden {
@@ -217,7 +224,7 @@ body {
     text-shadow: none;
     color: var(--dark-gray);
     background-color: white;
-    padding: 1rem 0;
+    padding: .5rem;
     margin-bottom: 1rem;
 }
 
