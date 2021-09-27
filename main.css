@@ -129,6 +129,7 @@ body {
 }
 
 .primary-btn {
+    width: 229px;
     font-family: "Karantina Light";
     font-size: 3rem;
     letter-spacing: 1px;
@@ -161,10 +162,10 @@ body {
     animation-delay: 0.3s;
 }
 
-.inner.visible .primary-btn:nth-child(3) {
+/* .inner.visible .primary-btn:nth-child(3) {
     transition-delay: 0.4s;
     animation-delay: 0.4s;
-}
+} */
 
 .modal {
     display: flex;
@@ -200,7 +201,6 @@ body {
 
 .modal .primary-btn {
     display: inline-block;
-    width: 229px;
     background-color: #fff;
     text-shadow: none;
     opacity: 1;
