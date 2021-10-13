@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "live-server ./src --no-browser",
-    "start": "live-server ./public --no-browser",
-    "build": "minify ./src/index.html > ./public/index.html && minify ./src/style.css > ./public/style.css && minify ./src/main.js > ./public/main.js"
+    "start": "live-server ./docs --no-browser",
+    "build": "minify ./src/index.html > ./docs/index.html && minify ./src/style.css > ./docs/style.css && minify ./src/main.js > ./docs/main.js"
   },
   "repository": {
     "type": "git",
