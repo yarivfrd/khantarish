@@ -19,7 +19,12 @@ window.addEventListener('DOMContentLoaded', function () {
 window.addEventListener('load', function () {
 
     app.curtain.classList.add('hidden');
-    if (!isPhone) app.qrCurtain.classList.add('shown');
+    
+    if (!isPhone) {
+        app.qrCurtain.classList.add('shown')
+    } else {
+        app.qrCurtain.remove();
+    };
 
     app.curtain.addEventListener('transitionend', function () {
         app.curtain.remove();
