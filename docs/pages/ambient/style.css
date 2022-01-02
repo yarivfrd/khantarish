@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Karantina Light";
+    src: url(../../fonts/Karantina-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Karantina Regular";
+    src: url(../../fonts/Karantina-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Karantina Bold";
+    src: url(../../fonts/Karantina-Bold.ttf);
+    font-weight: 700;
+}
+
+html {
+    direction: rtl;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: "Karantina";
+}
+
+video {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    filter: sepia(1) saturate(1.5) brightness(80%);
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.titles {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 0.75;
+    letter-spacing: 10px;
+}
+
+.title, .subtitle {
+    color: white;
+    text-shadow: 3px 3px 15px #333;
+}
+
+.title {
+    font-size: 24rem;
+}
+
+.subtitle {
+    color: lightyellow;
+    font-size: 7.6rem;
+}
+
+.cta {
+    background-color: white;
+    color: #444;
+    font-size: 4.85rem;
+    margin-top: 19px;
+    padding-bottom: 8px;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.cta span {
+    font-weight: bold;
+}
