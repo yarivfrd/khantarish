@@ -24,7 +24,7 @@ html {
 body {
     margin: 0;
     overflow: hidden;
-    font-family: "Karantina";
+    font-family: "Karantina Regular";
 }
 
 video {
@@ -78,5 +78,5 @@ video {
 }
 
 .cta span {
-    font-weight: bold;
+    font-family: "Karantina Bold";
 }
