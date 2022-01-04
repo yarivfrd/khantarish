@@ -6,20 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Ambient</title>
+    
 </head>
 <body>
     <main>
-        <video src="./background.mp4" autoplay controls loop></video>
+        <video class="background" src="./background.mp4" loop></video>
         <div class="inner">
             <div class="titles">
                 <div class="title">החנטריש</div>
                 <div class="subtitle">כבר לא משעמם בחריש</div>
                 <div class="cta">חפשו בפייסבוק את<span> #החנטריש_בחריש</span></div>
             </div>
-            <div class="join">
-
-            </div>
         </div>
     </main>
+    <script>
+        window.addEventListener('load', () => {
+            document.querySelector('.inner').addEventListener('click', () => {
+                document.querySelector('.background').play();
+            });
+        });
+    </script>
 </body>
 </html>

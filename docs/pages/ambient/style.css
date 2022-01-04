@@ -23,8 +23,9 @@ html {
 
 body {
     margin: 0;
-    overflow: hidden;
+    background-color: black;
     font-family: "Karantina Regular";
+    overflow: hidden;
 }
 
 video {
@@ -34,7 +35,7 @@ video {
     height: 100vh;
     width: 100%;
     z-index: -1;
-    filter: sepia(1) saturate(1.5) brightness(80%);
+    filter: hue-rotate(345deg) blur(10px);
 }
 
 .inner {
@@ -42,7 +43,7 @@ video {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
 }
 
 .titles {
@@ -54,22 +55,22 @@ video {
 }
 
 .title, .subtitle {
-    color: white;
     text-shadow: 3px 3px 15px #333;
 }
 
 .title {
+    color: #7adfbb;
     font-size: 24rem;
 }
 
 .subtitle {
-    color: lightyellow;
+    color: white;
     font-size: 7.6rem;
 }
 
 .cta {
-    background-color: white;
-    color: #444;
+    background-color: #7adfbb;
+    color: #111;
     font-size: 4.85rem;
     margin-top: 19px;
     padding-bottom: 8px;
